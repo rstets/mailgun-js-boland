@@ -27,7 +27,7 @@
     "is-stream": "^1.1.0",
     "path-proxy": "~1.0.0",
     "promisify-call": "^2.0.2",
-    "proxy-agent": "^3.0.3",
+    "proxy-agent": "^4.0.1",
     "tsscmp": "^1.0.6"
   },
   "author": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "clone": "^2.1.2",
-    "mocha": "~5.2.0",
+    "mocha": "^8.3.2",
     "nodemailer": "^4.6.8",
     "request": "^2.88.0",
     "sinon": "^7.1.0",
@@ -43,7 +43,7 @@
   },
   "scripts": {
     "test": "npm run lint && npm run mocha",
-    "mocha": "mocha --ui exports --slow 1500ms --timeout 10000ms --reporter spec",
+    "mocha": "mocha --ui bdd --slow 1500ms --timeout 10000ms --reporter spec",
     "lint": "standard lib/**/*.js && standard --env mocha test/**/*.js",
     "lint:fix": "standard --fix lib/**/*.js && standard --env mocha --fix test/**/*.js",
     "docs": "./bin/docs"
